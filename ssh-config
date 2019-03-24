@@ -1,0 +1,7 @@
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+  XAuthLocation /opt/X11/bin/xauth
+  ForwardX11 yes
+  ForwardAgent yes
