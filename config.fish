@@ -16,6 +16,6 @@ function ssh
   ~/bin/ssh $argv
 end
 
-set -gx PATH /opt/local/bin /opt/local/sbin $PATH
+set -gx PATH /opt/local/bin /opt/local/sbin ~/miniconda2/bin $PATH
 set -gx MANPATH /opt/local/share/man $MANPATH
 set -gx DISPLAY :0.0

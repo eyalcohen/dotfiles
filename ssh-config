@@ -1,7 +1,12 @@
+Host 192.168.*.* oxalis lily
+  XAuthLocation /opt/local/bin/xauth
+  ForwardX11 yes
+
 Host *
   AddKeysToAgent yes
+  IgnoreUnknown  UseKeychain
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
-  XAuthLocation /opt/X11/bin/xauth
-  ForwardX11 yes
   ForwardAgent yes
+  Compression yes
+  Ciphers aes128-ctr
