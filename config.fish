@@ -12,8 +12,13 @@ function fif -a FLAGS REGEX WHERE -d "Calls grep [$arg0] $arg1 [$arg2='.']"
   grep -rn -s --color=auto $FLAGS $REGEX $WHERE
 end
 
-function ssh
-  ~/bin/ssh $argv
+function ssh-new
+  if test -n $TMUX
+    tmux select-pane -P 'bg=#331C1F'
+  end
+  ssh $argv
+  echo "done"
+  tmux select-pane -P 'bg=#022B36'
 end
 
 set -gx PATH /opt/local/bin /opt/local/sbin ~/miniconda2/bin $PATH

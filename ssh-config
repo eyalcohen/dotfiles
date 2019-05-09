@@ -1,6 +1,18 @@
-Host 192.168.*.* oxalis lily
+Host 192.168.11.86
+  User kuser
+
+Host georgetown
+  User lumberjack
+
+Host oxalis
+
+Host lily daisy bench
+  User kuser
+
+Host 192.168.*.* oxalis lily daisy
   XAuthLocation /opt/local/bin/xauth
   ForwardX11 yes
+  ForwardX11Trusted yes
 
 Host *
   AddKeysToAgent yes
