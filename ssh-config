@@ -6,10 +6,10 @@ Host georgetown
 
 Host oxalis
 
-Host lily daisy bench
+Host lily daisy bench daisy-xavier lilyxavier
   User kuser
 
-Host 192.168.*.* oxalis lily daisy
+Host 192.168.*.* oxalis lily daisy daisy-xavier lilyxavier
   XAuthLocation /opt/local/bin/xauth
   ForwardX11 yes
   ForwardX11Trusted yes
