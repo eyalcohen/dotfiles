@@ -1,0 +1,22 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "CC:22:3D:E3:CE:30",
+    "port": 51826,
+    "pin": "031-45-154"
+  },
+  
+  "description": "Safehouse",
+  "ports": {
+    "start": 52100,
+    "end": 52150,
+    "comment": "This section is used to control the range of ports that separate accessory (like camera or television) should be bind to."
+  },
+
+  "platforms": [{
+     "platform": "MyQ2",
+     "email": "eyalcohen1@gmail.com",
+     "password": "ENZ0wnq4KT3O"
+  }]
+}
+
