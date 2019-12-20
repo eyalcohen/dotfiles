@@ -15,3 +15,5 @@
 	trustExitCode = false
 [mergetool]
 	keepBackup = false
+[core]
+	trustctime = false
