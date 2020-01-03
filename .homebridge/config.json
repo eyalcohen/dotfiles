@@ -13,10 +13,29 @@
     "comment": "This section is used to control the range of ports that separate accessory (like camera or television) should be bind to."
   },
 
-  "platforms": [{
-     "platform": "MyQ2",
-     "email": "eyalcohen1@gmail.com",
-     "password": "ENZ0wnq4KT3O"
+  "platforms": [
+  {
+    "platform": "MyQ2",
+    "email": "eyalcohen1@gmail.com",
+    "password": "ENZ0wnq4KT3O"
+  }, {
+    "platform":"Camera-ffmpeg",
+    "cameras": [{
+      "name":"UniFi G3 Flex",
+      "videoConfig":{
+        "source":"-rtsp_transport tcp -re -i rtsp://192.168.1.210:554/s1",
+        "additionalCommandline": "-preset slow -profile:v high -level 4.2 -x264-params intra-refresh=1:brame=0",
+        "audio": true,
+        "mapvideo": "0:1",
+        "mapaudio": "0:0",
+        "maxStreams": 2,
+        "maxWidth": 640,
+        "maxHeight": 360,
+        "maxFPS": 15,
+        "debug": false 
+      }
+    }]
   }]
 }
+
 
